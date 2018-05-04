@@ -1,0 +1,16 @@
+;; -*- mode: clojure -*-
+{
+ :description "Derby Localhost Source Connection"
+ :db-spec {
+           :classname "org.apache.derby.jdbc.EmbeddedDriver"
+           :subprotocol "derby"
+           :subname  "memory:source-db;create=true;"
+           ;;:user "none"
+           ;;:password "none"
+           }
+ :field-delim "\u0001"
+ :row-delim "\n"
+ :auto-commit false
+ :concurrency :read-only
+ :max-rows nil
+ }

@@ -1,0 +1,15 @@
+;; -*- mode: clojure -*- 
+{
+ :description "PG Example Connection"
+ :db-spec {
+           :classname "org.postgres.Driver"
+           :subprotocol "postgres"
+           :subname "//some-host-name.com:5432/somedb"
+           :user "my_user"
+           :password "*****"
+           }
+ :field-delim "\u0001"
+ :row-delim "\n"
+ :auto-commit false
+ :concurrency :read-only
+ :max-rows nil}
